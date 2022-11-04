@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <section>
+          <label for="email">Email: </label>
+          <input type="email" name="email" placeholder="email">
+          <br>
+          <label for="password">Password: </label>
+          <input type="password" name="password">
+          <br>
+          <label for="first_name">First Name: </label>
+          <input type="text" name="first_name" placeholder="First Name">
+          <br>
+          <label for="last_name">Last Name: </label>
+          <input type="text" name="last_name" placeholder="Last Name">
+          <br>
+          <label for="birthday">Date of birth: </label>
+          <input type="date" name="birthday">
+          <br>
+          <label for="phone">Telephone:</label>
+          <input type="tel" name="phone">
+          <br>
+      </section>
+      <section>
+        <p>Subscription plan:</p>
+          <label for="free">Free</label>
+          <input type="radio" id="free" name="plan" value="free">
+
+          <label for="10">10$/month</label>
+          <input type="radio" id="10" name="plan" value="10">
+
+          <label for="14">14$/month</label>
+          <input type="radio" id="14" name="plan" value="14">
+
+          <label for="21">21$/month</label>
+          <input type="radio" id="21" name="plan" value="21">
+
+          <label for="pro">Pro Plan</label>
+          <input type="checkbox" name="pro" value="pro">
+          
+      </section>
+
+
+  </body>
+</html>
