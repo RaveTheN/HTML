@@ -16,36 +16,33 @@
       <section>
           <label for="email">Email: </label>
           <input type="email" name="email" placeholder="email">
-          <br>
+          
           <label for="password">Password: </label>
           <input type="password" name="password">
-          <br>
+          
           <label for="first_name">First Name: </label>
           <input type="text" name="first_name" placeholder="First Name" placeholder="First Name" required pattern="[A-za-z]+" minlength="1" maxlength="20">
-          <br>
+          
           <label for="last_name">Last Name: </label>
           <input type="text" name="last_name" placeholder="Last Name" placeholder="First Name" required pattern="[A-za-z]+" minlength="1" maxlength="20">
-          <br>
+          
           <label for="birthday">Date of birth: </label>
           <input type="date" name="birthday">
-          <br>
+          
           <label for="phone">Telephone:</label>
           <input type="tel" name="phone" pattern="[0-9]+" minlength="8" maxlength="10">
-          <br>
+          
       </section>
       <section>
-        <p>Subscription plan:</p>
-          <label for="free">Free</label>
-          <input type="radio" id="free" name="plan" value="free">
-
-          <label for="10">10$/month</label>
-          <input type="radio" id="10" name="plan" value="10">
-
-          <label for="14">14$/month</label>
-          <input type="radio" id="14" name="plan" value="14">
-
-          <label for="21">21$/month</label>
-          <input type="radio" id="21" name="plan" value="21">
+        <label for="form-plan">Plans</label>
+        <select id="form-plan" name="plan" required>
+          <option value="0">Free</option>
+          <optgroup label="Monthly">
+            <option value="199">1.99€/month</option>
+            <option value="599">5.99€/month</option>
+            <option value="1199">11.99€/month</option>
+          </optgroup>
+        </select>
 
           <label for="pro">Pro Plan</label>
           <input type="checkbox" name="pro" value="pro">
@@ -53,14 +50,14 @@
       <section>
         <label for="card">Credit card: </label>
         <input type="text" name="Card" placeholder="xxxx xxxx xxxx xxxx" required pattern="[0-9]+" minlength="16" maxlength="16">
-        <br>
+        
         <label for="CVC">CVC: </label>
-        <input type="text" name="CVC" placeholder="xxx" required pattern="[0-9]+" minlength="3" maxlength="3">
-        <br>
+        <input type="text" name="CVC" placeholder="xxx" required pattern="[0-9]+" minlength="3" maxlength="3" size="5">
+        
         <label for="exp">Expiry date: </label>
         <div id="exp">
-          <input class="exp" id="month" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" required>
-          <input class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" required>
+          <input class="exp" id="month" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" required size="2">
+          <input class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" required size="2">
         </div>
 
         <p>Billing address:</p>
@@ -68,10 +65,10 @@
         <input type="text" name="street" placeholder="Street" required pattern="[A-za-z0-9 ]+" minlength="1" maxlength="20">
         <label for="City">City: </label>
         <input type="text" name="City" placeholder="e.g. London" required pattern="[A-za-z ]+" minlength="1" maxlength="20">
-        <br>
+        
         <label for="postcode">Postcode: </label>
         <input type="text" name="postcode" placeholder="e.g. 12345" required pattern="[0-9]+" minlength="5" maxlength="5">
-        <br>
+        
 
       </section>
       <input type="submit">
