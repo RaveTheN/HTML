@@ -1,0 +1,20 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {text-align: center;}
+
+#main_title{
+  background-color: inherit;
+  text-align: center;
+}
+
+article {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+ }
+
+ label {
+    display: block;
+ }
